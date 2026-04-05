@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="myName">
+            <h1>Clive Mhlongo</h1>
+            <p>Frontend Developer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="intro" id="home">
+            <div class="intro-content">
+                <p>Hi,I'm <span class="bold-name">Clive Mhlongo</span></p>
+            <hr>
+            <p>I build <span>modern and responsive websites.</span></p>
+            <hr>
+            <div class="intro-btns">
+                <button class="view-btn" onclick="myWork()">View My Work</button>
+                <button class="contact-btn" onclick="contact()">Contact Me </button>
+            </div>
+            </div>
+            <div class="intro-hero">
+                <img class="laptop" src="frontend hero.png" alt="silver laptop with js code on the screen">
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2>My Projects</h2>
+            <hr class="h2-underline">
+            <p class="p-text">My recent work</p>
+            <div class="projects-wrap">
+                <div class="p1">
+                    <a href="https://nhlakam.github.io/Car-Wash-Website/" target="_blank">
+                        <img class="thumbnail" src="car wash thumbnail.png" alt="black car being washed at a car wash">
+                        <div class="p-content">
+                            <h3>Car Wash Website</h3>
+                            <hr class="content-hr">
+                            <p>Business Site</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p2">
+                    <a href="https://nhlakam.github.io/Weather-App/" target="_blank">
+                        <img class="thumbnail" src="weather hero.png" alt="weather forcast">
+                    <div class="p-content">
+                        <h3>Weather App</h3>
+                        <hr class="content-hr">
+                        <p>JavaScript Api Project</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="p3">
+                    <a href="https://nhlakam.github.io/Smart-Budget-Tracker/" target="_blank">
+                        <img class="thumbnail" src="budget tracker.png" alt="phone showing budget tracker app on a screen with notebook and a cup of coffee on the side">
+                    <div class="p-content">
+                        <h3>Smart Budget Tracker</h3>
+                        <hr class="content-hr">
+                        <p>JavaScript Project</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="p4">
+                    <a href="https://nhlakam.github.io/Dashboard-Overview/" target="_blank">
+                        <img class="thumbnail" src="dashbord overview.png" alt="monitor showing dashbord overview on the screen">
+                    <div class="p-content">
+                        <h3>Dashbord Overview</h3>
+                        <hr class="content-hr">
+                        <p>HTML & CSS Project</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+                <div class="github">
+                    <button class="github-btn" onclick="myWork()">View My Github</button>
+                </div>
+        </div>
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <hr class="h2-underline">
+            <p class="p-text"><span>Creative Web Developer</span> based in,<span>Durban,South Africa</span></p>
+            <br>
+            <p class="p-text">I specialise in building user-friendly,responsive websites that help businesses grow online.</p>
+            <div class="what-i-do">
+                <div class="web">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(60, 60, 60)" d="M128 96C92.7 96 64 124.7 64 160L64 400L128 400L128 160L512 160L512 400L576 400L576 160C576 124.7 547.3 96 512 96L128 96zM19.2 448C8.6 448 0 456.6 0 467.2C0 509.6 34.4 544 76.8 544L563.2 544C605.6 544 640 509.6 640 467.2C640 456.6 631.4 448 620.8 448L19.2 448z"/></svg>
+                    <p>Web Design</p>
+                </div>
+                <div class="frontend-dev">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(60, 60, 60)" d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
+                    <p>Front-End Development</p>
+                </div>
+                <div class="custom-solution">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(60, 60, 60)" d="M415.9 274.5C428.1 271.2 440.9 277 446.4 288.3L465 325.9C475.3 327.3 485.4 330.1 494.9 334L529.9 310.7C540.4 303.7 554.3 305.1 563.2 314L582.4 333.2C591.3 342.1 592.7 356.1 585.7 366.5L562.4 401.4C564.3 406.1 566 411 567.4 416.1C568.8 421.2 569.7 426.2 570.4 431.3L608.1 449.9C619.4 455.5 625.2 468.3 621.9 480.4L614.9 506.6C611.6 518.7 600.3 526.9 587.7 526.1L545.7 523.4C539.4 531.5 532.1 539 523.8 545.4L526.5 587.3C527.3 599.9 519.1 611.3 507 614.5L480.8 621.5C468.6 624.8 455.9 619 450.3 607.7L431.7 570.1C421.4 568.7 411.3 565.9 401.8 562L366.8 585.3C356.3 592.3 342.4 590.9 333.5 582L314.3 562.8C305.4 553.9 304 540 311 529.5L334.3 494.5C332.4 489.8 330.7 484.9 329.3 479.8C327.9 474.7 327 469.6 326.3 464.6L288.6 446C277.3 440.4 271.6 427.6 274.8 415.5L281.8 389.3C285.1 377.2 296.4 369 309 369.8L350.9 372.5C357.2 364.4 364.5 356.9 372.8 350.5L370.1 308.7C369.3 296.1 377.5 284.7 389.6 281.5L415.8 274.5zM448.4 404C424.1 404 404.4 423.7 404.5 448.1C404.5 472.4 424.2 492 448.5 492C472.8 492 492.5 472.3 492.5 448C492.4 423.6 472.7 404 448.4 404zM224.9 18.5L251.1 25.5C263.2 28.8 271.4 40.2 270.6 52.7L267.9 94.5C276.2 100.9 283.5 108.3 289.8 116.5L331.8 113.8C344.3 113 355.7 121.2 359 133.3L366 159.5C369.2 171.6 363.5 184.4 352.2 190L314.5 208.6C313.8 213.7 312.8 218.8 311.5 223.8C310.2 228.8 308.4 233.8 306.5 238.5L329.8 273.5C336.8 284 335.4 297.9 326.5 306.8L307.3 326C298.4 334.9 284.5 336.3 274 329.3L239 306C229.5 309.9 219.4 312.7 209.1 314.1L190.5 351.7C184.9 363 172.1 368.7 160 365.5L133.8 358.5C121.6 355.2 113.5 343.8 114.3 331.3L117 289.4C108.7 283 101.4 275.6 95.1 267.4L53.1 270.1C40.6 270.9 29.2 262.7 25.9 250.6L18.9 224.4C15.7 212.3 21.4 199.5 32.7 193.9L70.4 175.3C71.1 170.2 72.1 165.2 73.4 160.1C74.8 155 76.4 150.1 78.4 145.4L55.1 110.5C48.1 100 49.5 86.1 58.4 77.2L77.6 58C86.5 49.1 100.4 47.7 110.9 54.7L145.9 78C155.4 74.1 165.5 71.3 175.8 69.9L194.4 32.3C200 21 212.7 15.3 224.9 18.5zM192.4 148C168.1 148 148.4 167.7 148.4 192C148.4 216.3 168.1 236 192.4 236C216.7 236 236.4 216.3 236.4 192C236.4 167.7 216.7 148 192.4 148z"/></svg>
+                    <p>Custom Solution</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact-details">
+                <h2>Get In Touch</h2>
+                <hr class="content-hr">
+                <p>Contact me today.</p>
+                <br>
+                <p><span>📧 Email:</span>nhlakaxolit@gmail.com</p>
+                <br>
+                <p><span>📞 Phone:</span>+2774 849 5566</p>
+            </div>
+            <div class="form-section">
+                <form id="form">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <br>
+                    <br>
+                    <input type="email" id="email" placeholder="Your Email">
+                    <br>
+                    <br>
+                    <input type="text" id="message" placeholder="Your Message">
+                    <br>
+                    <p id="response"></p>
+                    <button id="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>©2026 Clive Mhlongo</p>
+            <hr class="footer-hr">
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
