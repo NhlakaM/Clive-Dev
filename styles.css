@@ -21,7 +21,45 @@ header {
     justify-content: space-around;
     padding: 10px 0 5px 0;
     width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 200px;
+    z-index: 999;
     position: fixed;
+    background-color: var(--primary-color);
+}
+.show-bar {
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+}
+.show-bar:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+.side-bar .hide-bar {
+    align-self: flex-end;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+.side-bar a {
+    color: white;
+}
+.side-bar li {
+    padding: 15px;
 }
 ul a {
     text-decoration: none;
@@ -47,7 +85,7 @@ li {
     align-items: center;
     justify-content: space-around;
     color: var(--primary-color);
-    margin-top: 100px;
+    margin-top: 10px;
 }
 .intro-content {
     width: 20%;
@@ -269,9 +307,33 @@ svg {
 /* responsive */
 
 @media screen and (max-width: 550px) {
-    .contact-details p {
+.thumbnail {
+    width: 120px;
+}
+.p1 {
+    width: 120px;
+}
+.p2 {
+    width: 120px;
+}
+.p3 {
+    width: 120px;
+}
+.p4 {
+    width: 120px;
+}
+.contact-details p {
        font-size: small;
     }
+#name {
+    padding: 5px 20px;
+}
+#email {
+    padding: 5px 20px;
+}
+#message {
+    padding: 40px 20px;
+}
 }
 
 @media screen and (max-width: 840px) {
@@ -289,6 +351,12 @@ svg {
     }
     .projects-wrap {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .navigation {
+        display: none;
+    }
+    .show-bar {
+        display: flex;
     }
 }
 

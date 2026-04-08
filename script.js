@@ -1,5 +1,17 @@
 const form = document.getElementById("form");
 
+function showSideBar(){
+
+    const sidebar = document.querySelector(".side-bar");
+    sidebar.style.display = "flex" 
+}
+
+function hideSideBar(){
+
+    const sidebar = document.querySelector(".side-bar");
+    sidebar.style.display = "none" 
+}
+
 function myWork(){
 
     const gitHub = "https://github.com/NhlakaM";
@@ -29,7 +41,7 @@ form.addEventListener("submit", function(e){
     document.getElementById("response").textContent = "Submit was successful";
     
     const phoneNumber = "+27748495566";
-    const text = `Name:${name}%0Email:${email}%0Message:${message}`;
+    const text = `Name:${name} Email:${email} Message:${message}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
 
     window.open(whatsappUrl, "_blank");
